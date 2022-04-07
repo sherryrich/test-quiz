@@ -17,6 +17,12 @@
         <div class="game-area">
             <div id="game-area">
                 <h1 id="question">question</h1>
+                <div class="tally-area">
+                    <p class="tally">Correct Answers <span id="score">0</span></p>
+                    <p class="tally">Incorrect Answers <span id="incorrect">0</span></p>
+                </div>
+                <div id="game" class="justify-center flex-column">
+                   
                 <div class="image-container">
                     <img id="fit-picture">
                 </div>
@@ -40,10 +46,7 @@
                     <button onclick="renderNextQuestion()" class="btn" id="next-question">Next Question</button>
                     <button onclick="saveHighScore()" class="btn" id="finish">Finish</button>
                 </div>
-                <div class="tally-area">
-                    <p class="tally">Correct Answers <span id="score">0</span></p>
-                    <p class="tally">Incorrect Answers <span id="incorrect">0</span></p>
-                </div>
+                
             </div>
         </div>
     </section>
