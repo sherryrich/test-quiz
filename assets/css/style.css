@@ -53,6 +53,11 @@ h1{
     padding: 2rem;
 }  */
 
+.image-container {
+    padding: 1rem;
+    align-items: center;
+}
+
 .header-image {
     background-color: #00ccbc ;
 }
@@ -73,7 +78,7 @@ h1{
     height: 10vh;
     font-size: 5.5rem;
     text-align: center;
-    margin-top: 360px;
+    margin-top: 400px;
 }
 
 .btn {
@@ -133,7 +138,7 @@ h1{
 
 .answer-text {
     padding: 1.5rem;
-    text-align: left;
+    text-align: center;
     width: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -152,6 +157,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     margin-left: 80px;
+    padding: 40px 0 ;
 }
 
 .correct {
