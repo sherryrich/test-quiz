@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,37 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Test Quiz</title>
 </head>
+
 <body>
     <section class="top-game-area">
         <div class="game-area">
-        <img class="header-image" src="" alt="">
+            <img class="header-image" src="" alt="">
         </div>
         <div class="game-area">
             <h1 class="heading">Test Quiz</h1>
             <div class="controls">
-                <button type="button" onclick="window.location.href='questions.html'" class="btn" id="start">Start</button>
-                <button type="button" onclick="window.location.href='scoreBoard.html'" id="highscore-btn" class="btn">High Scores</button>
+                <button type="button" onclick="window.location.href='questions.html'" class="btn"
+                    id="start">Start</button>
+                <button type="button" onclick="window.location.href='scoreBoard.html'" id="highscore-btn"
+                    class="btn">High Scores</button>
+                    
+                    <button class="btn" id="open">
+                        How to play
+                    </button>
+                <div class="modal-container modal-btn" id="modal_container">
+                    <div class="modal">
+                        <h1>Modals are 😎</h1>
+                        <p>You will be shown a section of a Logo of a well known company. Simply pick the name of the company which matches the Logo !</p><br>
+                        <button class="btn-close" id="close">
+                            Ok got it!
+                        </button>
+                    </div>
+                </div>
             </div>
-        
+
         </div>
     </section>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>

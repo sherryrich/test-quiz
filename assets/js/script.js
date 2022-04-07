@@ -10,10 +10,12 @@ const scoreRef = document.querySelector('#score');
 const incorrectScoreRef = document.querySelector('#incorrect');
 const questionImageRef = document.querySelector('#fit-picture');
 
+
 let answerSelected = true;
 let currentQuestionIndex = -1;
 let score = 0;
 let availableQuestions= [];
+
 
 // Constants
 const QUESTIONS = [
@@ -125,3 +127,6 @@ function saveHighScore() {
     localStorage.setItem('score', score);
     window.location.assign("highscores.html");
 }
+
+
+

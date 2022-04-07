@@ -8,13 +8,14 @@
 
 body {
     background-color: #d9534f;
+    font-family: Lato, sans-serif;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
+    font-size: 65%;
     font-family: 'Lato', monospace;
 }
 /* Landing page styling */
@@ -53,6 +54,50 @@ h1{
     padding: 2rem;
 }  */
 
+/* modal */
+/* .btn-modal {
+    background-color: rgb(0, 255, 170);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 10px 25px;
+} */
+
+.modal-container {
+    background-color: rgba(226, 71, 71, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.modal h1 {
+    margin: 0;
+}
+
 .image-container {
     padding: 1rem;
     align-items: center;
@@ -88,6 +133,17 @@ h1{
     border-radius: 10px;
     border: none;
     background-color: white;
+}
+
+.btn-close {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    width: 30rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #d9534f;
+
 }
 
 .btn:hover {
